@@ -43,4 +43,4 @@ Release: `v1.0.0` (exemplo)
 
 ---
 
-Autor: Carolina (com suporte do assistente)
+Autor: Carolina
