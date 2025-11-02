@@ -1,26 +1,36 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Minha Conta — Entrega 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minha Conta — Entrega Final</title>
+  <meta name="description" content="Projeto final - SPA acessível, otimizado para produção.">
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="#/" data-link class="brand">Minha Conta</a>
-      <div class="nav-right">
-        <a href="#/" data-link>Home</a>
-        <a href="#/sobre" data-link>Sobre</a>
-        <a href="#/cadastro" data-link>Cadastro</a>
+<body class="theme-light" data-theme="light">
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Navegação principal">
+      <a href="#/" data-link class="brand" id="brand">Minha Conta</a>
+      <div class="nav-right" role="menu">
+        <button class="nav-btn" data-page="#/">Home</button>
+        <button class="nav-btn" data-page="#/sobre">Sobre</button>
+        <button class="nav-btn" data-page="#/cadastro">Cadastro</button>
+      </div>
+      <div class="theme-controls" aria-hidden="false">
+        <label for="toggle-contrast" class="small">Alto contraste</label>
+        <input id="toggle-contrast" type="checkbox" aria-label="Ativar modo alto contraste">
+        <label for="toggle-dark" class="small">Modo escuro</label>
+        <input id="toggle-dark" type="checkbox" aria-label="Ativar modo escuro">
       </div>
     </nav>
   </header>
 
-  <main id="app" class="container"></main>
+  <main id="main" class="container" role="main" tabindex="-1"></main>
 
-  <footer class="footer">Entrega 3 — JavaScript Avançado • SPA • localStorage</footer>
+  <footer class="footer" role="contentinfo">
+    <p>Entrega Final — WCAG 2.1 AA • GitFlow • Produção</p>
+  </footer>
 
   <script type="module" src="js/app.js"></script>
 </body>

@@ -1,23 +1,13 @@
-// formValidation.js — validação de formulário e exibição de erros
 export function validateForm(form){
   const errors = {};
   const nome = form.nome?.value?.trim() || '';
   const email = form.email?.value?.trim() || '';
-
   if(nome.length < 3) errors.nome = 'Nome deve ter ao menos 3 caracteres.';
   if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) errors.email = 'Email inválido.';
-
   return errors;
 }
-
 export function showErrors(form, errors){
   form.querySelectorAll('[data-error-for]').forEach(el=>el.textContent='');
-  Object.keys(errors).forEach(k=>{
-    const el = form.querySelector(`[data-error-for="${k}"]`);
-    if(el) el.textContent = errors[k];
-  });
+  Object.keys(errors).forEach(k=>{ const el = form.querySelector(`[data-error-for="${k}"]`); if(el) el.textContent = errors[k]; });
 }
-
-export function clearErrors(form){
-  form.querySelectorAll('[data-error-for]').forEach(el=>el.textContent='');
-}
+export function clearErrors(form){ form.querySelectorAll('[data-error-for]').forEach(el=>el.textContent=''); }
