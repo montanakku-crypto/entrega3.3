@@ -1,0 +1,20 @@
+*{box-sizing:border-box}body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:#fff7fb;color:#2b2b2b;line-height:1.5}
+.site-header{background:linear-gradient(90deg,#ffeff7,#ffd6ec);padding:12px 0;border-bottom:1px solid #ffd6ec}
+.nav{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+.brand{font-weight:700;color:#b0006b;text-decoration:none;font-size:1.1rem}
+.nav-right a{margin-left:14px;color:#b0006b;text-decoration:none}
+.container{max-width:900px;margin:24px auto;padding:0 16px}
+.card{background:#fff;border:1px solid #f3cfe3;padding:16px;border-radius:10px;box-shadow:0 4px 8px rgba(224,164,201,0.12)}
+h1,h2{color:#8b0050}
+.form-row{margin-bottom:12px}
+label{display:block;margin-bottom:6px;font-weight:600}
+input,textarea,select{width:100%;padding:8px;border:1px solid #e7a9cc;border-radius:6px}
+button.btn{background:#ff6fb5;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.small{font-size:0.9rem;color:#555}
+.error{color:#c6185a;font-size:0.95rem;margin-top:6px}
+.hidden{display:none}
+.footer{max-width:900px;margin:24px auto;padding:12px 16px;color:#7a3a55;font-size:0.9rem}
+.list-item{border-bottom:1px dashed #ffd6ec;padding:8px 0}
+.actions{display:flex;gap:8px;margin-top:8px}
+.link-like{background:transparent;border:none;color:#b0006b;cursor:pointer;padding:4px 6px;border-radius:6px}
+@media(min-width:720px){.nav-right a{margin-left:20px}}
